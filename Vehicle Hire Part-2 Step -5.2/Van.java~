@@ -1,0 +1,89 @@
+import java.util.*;
+/**
+ * This class is a subclass of commercial class which is also subclass of the
+ * vehicle class, holds information about van objects
+ *
+ * @ECE CALISKAN
+ * @13/03/2019
+ */
+public class Van extends Commercial
+{
+    //The details about the load volume
+    private double loadVolume;
+    //Whether the van has a sliding side door or not
+    private boolean slidingSideDoor;
+
+    /**
+     * Constructor for objects of class Van
+     */
+    public Van()
+    {
+        super(); //call for the superclass commercial constructor
+        loadVolume = 0.00;
+        slidingSideDoor = false;
+    }
+
+    /**
+     *This is an accessor method which returns load Volume
+     */
+    public double getLoadVolume()
+    {
+        return loadVolume;
+    }
+    
+    /**
+     * This is an accessor method which returns information about sliding side door 
+     */
+    public boolean getSlidingSideDoor()
+    {
+        return slidingSideDoor;
+    }
+    
+    /**
+     * This method overrides commercial class readData method
+     */
+    public void readData(Scanner scanner2)
+    {
+        String y = "yes"; 
+        super.readData(scanner2); //call for the superclass commercial readData method
+        String volume = scanner2.next();
+        this.loadVolume = Double.valueOf(volume);
+        String door = scanner2.next().trim();
+        if(door.equalsIgnoreCase(y))
+        {
+          this.slidingSideDoor = true;
+        }
+        else
+        {
+          this.slidingSideDoor = false;
+        }
+        printDetails();
+        scanner2.close();
+    }
+    
+    /**
+     * toString method for the objects of van class returns information about fields
+     */
+    public String toString()
+    {
+        return "Payload: " + getPayLoad() +"Load volume: " + loadVolume + "Sliding side door:" + slidingSideDoor + "\n";
+    }
+    
+    /**
+     * This method overrides commercial class printDetails() method and prints out van details
+     */
+    public void printDetails()
+    {
+         super.printDetails();//call for the superclass commercial printDetails method
+         System.out.print(" Load volume: " + loadVolume);
+         if (slidingSideDoor == true)
+         {
+             System.out.print(" Sliding Side Door: Yes");
+         }
+         else
+         {
+             System.out.println(" Sliding Side Door: No");
+         }
+         System.out.println("\n");
+    }
+}

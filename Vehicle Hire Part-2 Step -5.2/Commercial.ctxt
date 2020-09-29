@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Commercial
+comment0.text=\n\ This\ class\ is\ a\ subclass\ of\ vehicle\ class\n\n\ @ECE\ CALISKAN\ GROUP\ 3\n\ @13/03/2019\n
+comment1.params=
+comment1.target=Commercial()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Commercial\n
+comment2.params=
+comment2.target=double\ getPayLoad()
+comment2.text=\n\ This\ accessor\ method\ returns\ information\ about\ the\ payload\n
+comment3.params=
+comment3.target=void\ printDetails()
+comment3.text=\n\ This\ method\ overrides\ Vehicle\ class\ printDetails\ method\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ toString()\ method\ for\ the\ objects\ of\ commercial\ class\ returns\ information\ about\ the\ fields\n
+comment5.params=scanner2
+comment5.target=void\ readData(java.util.Scanner)
+comment5.text=\n\ This\ method\ overrides\ Vehicle\ reads\ commercial\ data\ and\ reads\ data\n
+numComments=6

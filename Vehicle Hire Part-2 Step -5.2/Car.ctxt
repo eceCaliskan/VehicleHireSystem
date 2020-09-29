@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Car
+comment0.text=\n\ This\ class\ stores\ additional\ information\ on\ car\ objects\ and\ subclass\ of\ \n\ the\ vehicle\ class\n\n\ ECE\ CALISKAN\ GROUP\ 3\n\ @13/03/2019\n
+comment1.params=
+comment1.target=Car()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Car\n
+comment2.params=
+comment2.target=java.lang.String\ getBodyType()
+comment2.text=\n\ This\ accessor\ method\ gets\ the\ body\ type\ of\ the\ car\n
+comment3.params=
+comment3.target=int\ getNoOfDoors()
+comment3.text=\n\ This\ accessor\ method\ gets\ the\ number\ of\ doors\ the\ car\ has\n
+comment4.params=
+comment4.target=int\ getNoOfSeats()
+comment4.text=\n\ This\ accessor\ method\ gets\ the\ number\ of\ seats\ the\ car\ has\n
+comment5.params=
+comment5.target=void\ printDetails()
+comment5.text=\n\ Prints\ out\ the\ details\ about\ car\ object\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ toString()\ method\ for\ the\ car\ class\ which\ returns\ details\n
+comment7.params=scanner2
+comment7.target=void\ readData(java.util.Scanner)
+comment7.text=\n\ Reads\ car\ data\n
+numComments=8
